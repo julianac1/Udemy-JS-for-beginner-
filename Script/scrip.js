@@ -190,27 +190,141 @@
 
 //if, else and else if statement
 
-console.log("Hello, welcome to the coffeshop");
+// console.log("Hello, welcome to the coffeshop");
 
-let q1 = prompt("What you like a coffee or a tea?")
+// let q1 = prompt("What you like a coffee or a tea?")
 
-if (q1 == "coffee") {
-    let q2 = prompt("would you like cookies with your coffee?");
-    if (q2 == "yes") {
-        console.log("you have ordered coffee and cookies");
-    } else if (q2!= "yes") {
-        console.log("you have only ordered coffee");
-    }
-}else if (q1 == "tea"){
-    let q3 = prompt("would you like cookies with your tea?");
-    if (q3 == "yes") {
-        console.log("you have ordered tea and cookies");
-    }else if (q3 != "yes"){
-        console.log("you have only ordered tea");
-    }
-}else{
-    console.log("ok, have a nice day");
+// if (q1 == "coffee") {
+//     let q2 = prompt("would you like cookies with your coffee?");
+//     if (q2 == "yes") {
+//         console.log("you have ordered coffee and cookies");
+//     } else if (q2!= "yes") {
+//         console.log("you have only ordered coffee");
+//     }
+// }else if (q1 == "tea"){
+//     let q3 = prompt("would you like cookies with your tea?");
+//     if (q3 == "yes") {
+//         console.log("you have ordered tea and cookies");
+//     }else if (q3 != "yes"){
+//         console.log("you have only ordered tea");
+//     }
+// }else{
+//     console.log("ok, have a nice day");
+// };
+
+//For loops
+
+// let x = 8;
+// for (i = 0; i < x; i++) {
+//     console.log("the number "+i+" is still smaller than "+x);
+    
+// }
+
+// for (i = 0; i < x; i+=2) {
+//     console.log("the number "+i+" is still smaller than "+x);
+    
+// }
+
+// for (i = 1; i < x; i+=2) {
+//     console.log("the number "+i+" is still smaller than "+x);
+    
+// }
+
+//while loop
+//create a password and type it until is correct
+
+// console.log("hello, welcome to the app");
+
+// let pass = prompt("Please create a password");
+
+// console.log("Your password have been created. Thank you");
+
+// let passtry = prompt("please enter your passrword");
+
+// while (passtry != pass) {
+//     passtry = prompt("error, try again");
+// }
+
+// console.log("you are in");
+
+
+
+// final project - food app
+
+console.log("hello, welcome to the food app");
+console.log("lets create an account");
+
+let username = prompt("Create an username:");
+let password = prompt("Create a password:");
+console.log("thank you, your account have been created");
+
+console.log("please enter your log in information");
+
+let tryuser = prompt("username: ");
+let trypass = prompt("password:");
+
+while (username!=tryuser && password!=trypass) {
+    console.log("Wrong password or username. Try again");
+    let tryuser = prompt("enter your username");
+    let trypass = prompt("enter your password");
 };
+
+console.log("you are connected");
+
+let balance = 10;
+console.log("your balance is "+balance+" $");
+
+let q1 = prompt("would you like to add money to your account?");
+
+if (q1 == "yes") {
+    let q2 = parseInt(prompt("how much would you like to add?"));
+    let balance2 = balance + q2;
+    console.log("your new balance is "+balance2+" $");
+} else {
+    console.log("Great");
+};
+
+
+let q4 = prompt("would you like a burguer");
+
+if (q4 == "yes") {
+    console.log("please choose the burguer you want");
+    let burguerTypes = ["cheeseburguer", "fishburguer", "all dress burguer"];
+    let prices = [2,3,5];
+    console.log("choice 1: "+burguerTypes[0]+" "+prices[0]+" $");
+    console.log("choice 2: "+burguerTypes[1]+" "+prices[1]+" $");
+    console.log("choice 3: "+burguerTypes[2]+" "+prices[2]+" $");
+    
+    let q5 = prompt("What is your choice?");
+
+    if (q5 == "choice 1") {
+        console.log("you have ordered a "+burguerTypes[0]);
+        console.log("the total of the order ir "+prices[0]+" $");
+        let total1 = balance2 - prices[0];
+        console.log("you have "+total1+" $ left on your balance");
+    }else if (q5=="choice 2") {
+        console.log("you have ordered a "+burguerTypes[1]);
+        console.log("the total of the order ir "+prices[1]+" $");
+        let total1 = balance2 - prices[1];
+        console.log("you have "+total1+" $ left on your balance");
+    }else if (q5=="choice 3") {
+        console.log("you have ordered a "+burguerTypes[2]);
+        console.log("the total of the order ir "+prices[2]+" $");
+        let total1 = balance2 - prices[2];
+        console.log("you have "+total1+" $ left on your balance");
+    }
+    else{
+        console.log("Have a good day");
+    };
+
+
+};
+
+
+
+
+
+
 
 
 
